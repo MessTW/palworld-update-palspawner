@@ -55,7 +55,7 @@ public:
 	int mDeathAuraAmount = 1.f;
 	int DamageUp = 100;
 	int DefuseUp = 2000;
-	int MaxWeight = 9999999;
+	bool MaxWeight = false;
 	bool fly = false;
 	bool SuperJump;
 	int EXP = 0;

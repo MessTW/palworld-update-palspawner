@@ -69,4 +69,6 @@ void TeleportToMapMarker();
 
 void NoReload();
 
+void MaxWeight();
+
 void SetBasePalsCraftingSpeed(float mNewSpeed, bool bRestoreDefault);

@@ -167,6 +167,7 @@ namespace DX11_Base {
 
             ImGui::Checkbox("Godmode", &Config.IsMuteki);
 
+            ImGui::Checkbox("Max CarryWeight", &Config.MaxWeight);
             if (ImGui::Checkbox("Invisible (F4)", &Config.spec))
             {
                 SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
@@ -312,20 +313,7 @@ namespace DX11_Base {
                 }
             }
 
-            if (ImGui::Button("MaxWeight", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25)))
-            {
-                SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
-                if (p_appc != NULL)
-                {
-                    if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
-                    {
-                        if (Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState() != NULL)
-                        {
-                            Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState()->InventoryData->MaxInventoryWeight = Config.MaxWeight;
-                        }
-                    }
-                }
-            }
+
 
             if (ImGui::Button("Starter Pack", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25))) {
                 SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
@@ -1724,7 +1712,7 @@ namespace DX11_Base {
         }
         
         bool check = false;
-        if (Config.fly || Config.SuperJump || Config.spec) {
+        if (Config.MaxWeight || Config.fly || Config.SuperJump || Config.spec) {
             
             SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
             p_appc->SetReplicateMovement(false);
@@ -1749,6 +1737,9 @@ namespace DX11_Base {
         if (Config.NoReload)
             NoReload();
         //  
+        if (Config.MaxWeight)
+            MaxWeight();
+
         if (Config.GetPalPlayerCharacter() != NULL)
         {
             if (Config.GetPalPlayerCharacter()->ShooterComponent != NULL && Config.GetPalPlayerCharacter()->ShooterComponent->GetHasWeapon() != NULL && Config.GetPalPlayerCharacter()->ShooterComponent->CanShoot())

@@ -481,6 +481,21 @@ void NoReload()
 	}
 }
 //	
+void MaxWeight()
+{
+	SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
+	if (p_appc != NULL)
+	{
+		if (Config.GetPalPlayerCharacter()->GetPalPlayerController() != NULL)
+		{
+			if (Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState() != NULL)
+			{
+				Config.GetPalPlayerCharacter()->GetPalPlayerController()->GetPalPlayerState()->InventoryData->MaxInventoryWeight = 9999999;
+			}
+		}
+	}
+
+}
 void ResetStamina()
 {
 	APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
