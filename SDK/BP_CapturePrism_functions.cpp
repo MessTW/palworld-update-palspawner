@@ -117,7 +117,7 @@ void ABP_CapturePrism_C::OnEndShootAnimation(class UAnimMontage* Montage, bool C
 }
 
 
-// Function BP_CapturePrism.BP_CapturePrism_C.OnThrow
+// Function BP_CapturePrism.BP_CapturePrism_C.On Throw
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -126,14 +126,14 @@ void ABP_CapturePrism_C::OnEndShootAnimation(class UAnimMontage* Montage, bool C
 // class UPalShooterComponent*        CallFunc_GetComponentByClass_ReturnValue                         (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CapturePrism_C::OnThrow(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwner_ReturnValue, class UPalShooterComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void ABP_CapturePrism_C::On_Throw(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwner_ReturnValue, class UPalShooterComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (!Func)
-		Func = Class->GetFunction("BP_CapturePrism_C", "OnThrow");
+		Func = Class->GetFunction("BP_CapturePrism_C", "On Throw");
 
-	Params::ABP_CapturePrism_C_OnThrow_Params Parms{};
+	Params::ABP_CapturePrism_C_On_Throw_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;

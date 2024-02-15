@@ -9,16 +9,16 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x70 (0x478 - 0x408)
+// 0x70 (0x498 - 0x428)
 // WidgetBlueprintGeneratedClass WBP_PalKeyGuideIcon.WBP_PalKeyGuideIcon_C
 class UWBP_PalKeyGuideIcon_C : public UPalUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x408(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPalUIActionWidgetBase*                PalUIActionWidgetBase_24;                          // 0x410(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                              SizeBox_0;                                         // 0x418(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    bindActionName;                                    // 0x420(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	TMap<enum class ECommonInputType, struct FSlateBrush> OverrideImageMap;                                  // 0x428(0x50)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPalUIActionWidgetBase*                PalUIActionWidgetBase_24;                          // 0x430(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                              SizeBox_0;                                         // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    bindActionName;                                    // 0x440(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	TMap<enum class ECommonInputType, struct FSlateBrush> OverrideImageMap;                                  // 0x448(0x50)(Edit, BlueprintVisible)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalKeyGuideIcon_C* GetDefaultObj();

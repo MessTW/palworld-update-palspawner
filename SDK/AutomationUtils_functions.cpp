@@ -43,12 +43,12 @@ class UAutomationUtilsBlueprintLibrary* UAutomationUtilsBlueprintLibrary::GetDef
 // Function AutomationUtils.AutomationUtilsBlueprintLibrary.TakeGameplayAutomationScreenshot
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                      ScreenshotName                                                   (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                      ScreenShotName                                                   (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                              MaxGlobalError                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                              MaxLocalError                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FString                      MapNameOverride                                                  (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAutomationUtilsBlueprintLibrary::TakeGameplayAutomationScreenshot(const class FString& ScreenshotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride)
+void UAutomationUtilsBlueprintLibrary::TakeGameplayAutomationScreenshot(const class FString& ScreenShotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride)
 {
 	static class UFunction* Func = nullptr;
 
@@ -57,7 +57,7 @@ void UAutomationUtilsBlueprintLibrary::TakeGameplayAutomationScreenshot(const cl
 
 	Params::UAutomationUtilsBlueprintLibrary_TakeGameplayAutomationScreenshot_Params Parms{};
 
-	Parms.ScreenshotName = ScreenshotName;
+	Parms.ScreenShotName = ScreenShotName;
 	Parms.MaxGlobalError = MaxGlobalError;
 	Parms.MaxLocalError = MaxLocalError;
 	Parms.MapNameOverride = MapNameOverride;

@@ -18,7 +18,7 @@ public:
 	static class UClass* StaticClass();
 	static class UAutomationUtilsBlueprintLibrary* GetDefaultObj();
 
-	void TakeGameplayAutomationScreenshot(const class FString& ScreenshotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride);
+	void TakeGameplayAutomationScreenshot(const class FString& ScreenShotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride);
 };
 
 }

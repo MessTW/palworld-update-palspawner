@@ -9,17 +9,17 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x28 (0x1518 - 0x14F0)
+// 0x28 (0x1538 - 0x1510)
 // WidgetBlueprintGeneratedClass WBP_PalCommonButtonBase.WBP_PalCommonButtonBase_C
 class UWBP_PalCommonButtonBase_C : public UCommonButtonBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x14F0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                         HideFocusCursor;                                   // 0x14F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2CC8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UAkAudioEvent*                         HoverAKAudioEvent;                                 // 0x1500(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                         UnhoverAKAudioEvent;                               // 0x1508(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                         ClickAKAudioEvent;                                 // 0x1510(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x1510(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                         HideFocusCursor;                                   // 0x1518(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2398[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UAkAudioEvent*                         HoverAKAudioEvent;                                 // 0x1520(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                         UnhoverAKAudioEvent;                               // 0x1528(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                         ClickAKAudioEvent;                                 // 0x1530(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalCommonButtonBase_C* GetDefaultObj();

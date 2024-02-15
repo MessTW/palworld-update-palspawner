@@ -9,14 +9,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0x4B8 - 0x4A0)
+// 0x18 (0x4D8 - 0x4C0)
 // WidgetBlueprintGeneratedClass WBP_PalInGameMenuItemSlot.WBP_PalInGameMenuItemSlot_C
 class UWBP_PalInGameMenuItemSlot_C : public UWBP_PalItemSlotBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x4A0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_PalTextBlock_C*                    Text_ItemNum;                                      // 0x4A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalInGameMenuItemIcon_C*          WBP_PalInGameMenuItemIcon;                         // 0x4B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x4C0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_PalTextBlock_C*                    Text_ItemNum;                                      // 0x4C8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalInGameMenuItemIcon_C*          WBP_PalInGameMenuItemIcon;                         // 0x4D0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalInGameMenuItemSlot_C* GetDefaultObj();

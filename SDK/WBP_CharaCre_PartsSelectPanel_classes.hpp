@@ -9,16 +9,16 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x78 (0x2F0 - 0x278)
+// 0x78 (0x2F8 - 0x280)
 // WidgetBlueprintGeneratedClass WBP_CharaCre_PartsSelectPanel.WBP_CharaCre_PartsSelectPanel_C
 class UWBP_CharaCre_PartsSelectPanel_C : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x278(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWrapBox*                              WrapBox_Main;                                      // 0x280(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnClickedAnyContent;                               // 0x288(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMap<class FName, class UWBP_CharaCre_PartsSelect_sq_C*> ButtonMap;                                         // 0x298(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UWBP_CharaCre_PartsSelect_sq_C*        LastClickedButton;                                 // 0x2E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x280(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWrapBox*                              WrapBox_Main;                                      // 0x288(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnClickedAnyContent;                               // 0x290(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMap<class FName, class UWBP_CharaCre_PartsSelect_sq_C*> ButtonMap;                                         // 0x2A0(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UWBP_CharaCre_PartsSelect_sq_C*        LastClickedButton;                                 // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_CharaCre_PartsSelectPanel_C* GetDefaultObj();

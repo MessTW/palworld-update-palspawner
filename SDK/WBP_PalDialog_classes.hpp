@@ -9,22 +9,22 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x90 (0x4C0 - 0x430)
+// 0x90 (0x508 - 0x478)
 // WidgetBlueprintGeneratedClass WBP_PalDialog.WBP_PalDialog_C
 class UWBP_PalDialog_C : public UPalUIDialogBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x430(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_CommonPopupWindow_C*              WBP_CommonPopupWindow;                             // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalDialogParameterDialog*             Parameter;                                         // 0x440(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   RowName_Yes;                                       // 0x448(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   RowName_No;                                        // 0x458(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   YesMSGID;                                          // 0x468(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   NoMSGID;                                           // 0x478(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   DecideMSGID;                                       // 0x488(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   CancelMSGID;                                       // 0x498(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FDataTableRowHandle                   OkMSGID;                                           // 0x4A8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalDataTableRowName_UIInputAction    ShortcutConfirmInputAction;                        // 0x4B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_CommonPopupWindow_C*              WBP_CommonPopupWindow;                             // 0x480(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalDialogParameterDialog*             Parameter;                                         // 0x488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   RowName_Yes;                                       // 0x490(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   RowName_No;                                        // 0x4A0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   YesMSGID;                                          // 0x4B0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   NoMSGID;                                           // 0x4C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   DecideMSGID;                                       // 0x4D0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   CancelMSGID;                                       // 0x4E0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FDataTableRowHandle                   OkMSGID;                                           // 0x4F0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPalDataTableRowName_UIInputAction    ShortcutConfirmInputAction;                        // 0x500(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalDialog_C* GetDefaultObj();

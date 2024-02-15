@@ -9,17 +9,17 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x88 (0x4B0 - 0x428)
+// 0x88 (0x4D0 - 0x448)
 // WidgetBlueprintGeneratedClass WBP_CharaCre_ScrollBoxContent_Voice.WBP_CharaCre_ScrollBoxContent_Voice_C
 class UWBP_CharaCre_ScrollBoxContent_Voice_C : public UWBP_CharaCre_ScrollBoxContentBase_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Chara_Cre_VoiceTypeSlider_C*      WBP_Chara_Cre_VoiceTypeSlider;                     // 0x430(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                              WrapBox_Body;                                      // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnChangedVoiceID;                                  // 0x440(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class UAkAudioEvent*>                 SampleVoiceArray;                                  // 0x450(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<int32, int32>                           PlayVoiceMap;                                      // 0x460(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x448(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Chara_Cre_VoiceTypeSlider_C*      WBP_Chara_Cre_VoiceTypeSlider;                     // 0x450(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                              WrapBox_Body;                                      // 0x458(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnChangedVoiceID;                                  // 0x460(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class UAkAudioEvent*>                 SampleVoiceArray;                                  // 0x470(0x10)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<int32, int32>                           PlayVoiceMap;                                      // 0x480(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class UWBP_CharaCre_ScrollBoxContent_Voice_C* GetDefaultObj();

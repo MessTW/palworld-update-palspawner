@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x58 (0x460 - 0x408)
+// 0x58 (0x480 - 0x428)
 // WidgetBlueprintGeneratedClass WBP_PalGenusCategoryIcon.WBP_PalGenusCategoryIcon_C
 class UWBP_PalGenusCategoryIcon_C : public UPalUserWidget
 {
 public:
-	class UImage*                                Image_15;                                          // 0x408(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<enum class EPalGenusCategoryType, TSoftObjectPtr<class UTexture2D>> IconMap;                                           // 0x410(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UImage*                                Image_15;                                          // 0x428(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<enum class EPalGenusCategoryType, TSoftObjectPtr<class UTexture2D>> IconMap;                                           // 0x430(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalGenusCategoryIcon_C* GetDefaultObj();

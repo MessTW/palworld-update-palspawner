@@ -9,30 +9,30 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x90 (0x4C0 - 0x430)
+// 0xB8 (0x530 - 0x478)
 // WidgetBlueprintGeneratedClass WBP_GameOver_Down.WBP_GameOver_Down_C
 class UWBP_GameOver_Down_C : public UPalUserWidgetOverlayUI
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x430(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBP_PalTextBlock_C*                    BP_PalTextBlock_CountDown;                         // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                          CanvasPanel_CountDown;                             // 0x440(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                RoundProgress;                                     // 0x448(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Ingame_Interact_C*                WBP_Ingame_Interact;                               // 0x450(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalCommonButton_C*                WBP_PalCommonButton;                               // 0x458(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                         CurrentInRescue;                                   // 0x460(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_630[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPalDataTableRowName_UIInputAction    UIInputAction;                                     // 0x464(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                  Trigger_Action_Handle;                             // 0x46C(0x4)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	struct FPalUIActionBindData                  End_Trigger_Actionhandle;                          // 0x470(0x4)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	uint8                                        Pad_632[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       LongPushTime;                                      // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         PressingGiveup;                                    // 0x480(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_633[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CurrentPressedTime;                                // 0x488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	FMulticastInlineDelegateProperty_            OnGiveup;                                          // 0x490(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	FMulticastInlineDelegateProperty_            OnCreateRescueWidget;                              // 0x4A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FDataTableRowHandle                   GiveupMsgId;                                       // 0x4B0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBP_PalTextBlock_C*                    BP_PalTextBlock_CountDown;                         // 0x480(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                          CanvasPanel_CountDown;                             // 0x488(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                RoundProgress;                                     // 0x490(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Ingame_Interact_C*                WBP_Ingame_Interact;                               // 0x498(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalCommonButton_C*                WBP_PalCommonButton;                               // 0x4A0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                         CurrentInRescue;                                   // 0x4A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F1E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPalDataTableRowName_UIInputAction    UIInputAction;                                     // 0x4AC(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F1F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPalUIActionBindData                  Trigger_Action_Handle;                             // 0x4B8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPalUIActionBindData                  End_Trigger_Actionhandle;                          // 0x4D0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                       LongPushTime;                                      // 0x4E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         PressingGiveup;                                    // 0x4F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F20[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CurrentPressedTime;                                // 0x4F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	FMulticastInlineDelegateProperty_            OnGiveup;                                          // 0x500(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	FMulticastInlineDelegateProperty_            OnCreateRescueWidget;                              // 0x510(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FDataTableRowHandle                   GiveupMsgId;                                       // 0x520(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 	static class UClass* StaticClass();
 	static class UWBP_GameOver_Down_C* GetDefaultObj();

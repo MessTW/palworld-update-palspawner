@@ -9,14 +9,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x60 (0x2D8 - 0x278)
+// 0x60 (0x2E0 - 0x280)
 // WidgetBlueprintGeneratedClass WBP_IngameMenu_Task_Tutorial.WBP_IngameMenu_Task_Tutorial_C
 class UWBP_IngameMenu_Task_Tutorial_C : public UUserWidget
 {
 public:
-	class UCanvasPanel*                          Canvas_TaskDetail;                                 // 0x278(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                          VerticalBox_TaskDetail;                            // 0x280(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<class UWBP_IngameMenu_Task_Tutorial_List_C*, class UPalQuestData*> CreatedWidgetMap;                                  // 0x288(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UCanvasPanel*                          Canvas_TaskDetail;                                 // 0x280(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                          VerticalBox_TaskDetail;                            // 0x288(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<class UWBP_IngameMenu_Task_Tutorial_List_C*, class UPalQuestData*> CreatedWidgetMap;                                  // 0x290(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 	static class UClass* StaticClass();
 	static class UWBP_IngameMenu_Task_Tutorial_C* GetDefaultObj();

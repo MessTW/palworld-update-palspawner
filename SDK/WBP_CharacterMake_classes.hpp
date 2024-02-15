@@ -9,54 +9,54 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x1FC (0x62C - 0x430)
+// 0x210 (0x688 - 0x478)
 // WidgetBlueprintGeneratedClass WBP_CharacterMake.WBP_CharacterMake_C
 class UWBP_CharacterMake_C : public UPalUICharacterMakeBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x430(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_CharaCre_C*                       WBP_CharaCre;                                      // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CharaCre_BG_C*                    WBP_CharaCre_BG;                                   // 0x440(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon;                               // 0x448(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_1;                             // 0x450(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_2;                             // 0x458(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_3;                             // 0x460(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PalPlayerInframeRender_C*         WBP_PalPlayerInframeRender;                        // 0x468(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    MouseZoomInInputAction;                            // 0x470(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    MouseZoomOutInputAction;                           // 0x478(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalPlayerDataCharacterMakeInfo       MakeInfo;                                          // 0x480(0x94)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	enum class E_UICharacterMakeCategory         NowDisplayCategory;                                // 0x514(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3A2A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPalDataTableRowName_UIInputAction    DecideInputAction;                                 // 0x518(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    RandomizeInputAction;                              // 0x520(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    PrevCategoryInputAction;                           // 0x528(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    NextCategoryInputAction;                           // 0x530(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	enum class E_UICharacterMakeCategory         LastActivatedCategory;                             // 0x538(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3A2C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       SVMax;                                             // 0x540(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_CharacterMake* DIspaltchParameter;                                // 0x548(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CachedPlayerName;                                  // 0x550(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
-	double                                       RotationSpeed_Pad;                                 // 0x568(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       RotationSpeed_MouseDrag;                           // 0x570(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       ZoomSpeed_Pad;                                     // 0x578(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       ZoomRate_WheelTrigger;                             // 0x580(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CachedAnalogValueX;                                // 0x588(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       CachedAnalogValueY;                                // 0x590(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CameraRelativeLocation;                            // 0x598(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         IsMLBDown;                                         // 0x5B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3A2D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       MaxZoomCameraOffset_BodySetting;                   // 0x5B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                       MaxZoomCameraOffset_HeadSetting;                   // 0x5C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   CompleteCheckMsgID;                                // 0x5C8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	bool                                         IsRTriggerDown;                                    // 0x5D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         IsLTriggerDown;                                    // 0x5D9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3A2E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	double                                       CameraUpDownSpeed_ForPad;                          // 0x5E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_FadeWidget*   FadeInParameter;                                   // 0x5E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               DefaultHeadCameraLocation;                         // 0x5F0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               DefaultBodyCameraLocation;                         // 0x608(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_UIInputAction    PlaySampleVoiceInInputAction;                      // 0x620(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                  PlaySampleVoiceActionHandle;                       // 0x628(0x4)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x478(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_CharaCre_C*                       WBP_CharaCre;                                      // 0x480(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CharaCre_BG_C*                    WBP_CharaCre_BG;                                   // 0x488(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon;                               // 0x490(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_1;                             // 0x498(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_2;                             // 0x4A0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalKeyGuideIcon_C*                WBP_PalKeyGuideIcon_3;                             // 0x4A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PalPlayerInframeRender_C*         WBP_PalPlayerInframeRender;                        // 0x4B0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    MouseZoomInInputAction;                            // 0x4B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    MouseZoomOutInputAction;                           // 0x4C0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalPlayerDataCharacterMakeInfo       MakeInfo;                                          // 0x4C8(0x94)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	enum class E_UICharacterMakeCategory         NowDisplayCategory;                                // 0x55C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_48BA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPalDataTableRowName_UIInputAction    DecideInputAction;                                 // 0x560(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    RandomizeInputAction;                              // 0x568(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    PrevCategoryInputAction;                           // 0x570(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    NextCategoryInputAction;                           // 0x578(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	enum class E_UICharacterMakeCategory         LastActivatedCategory;                             // 0x580(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_48BB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       SVMax;                                             // 0x588(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_CharacterMake* DIspaltchParameter;                                // 0x590(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CachedPlayerName;                                  // 0x598(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
+	double                                       RotationSpeed_Pad;                                 // 0x5B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       RotationSpeed_MouseDrag;                           // 0x5B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       ZoomSpeed_Pad;                                     // 0x5C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       ZoomRate_WheelTrigger;                             // 0x5C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CachedAnalogValueX;                                // 0x5D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       CachedAnalogValueY;                                // 0x5D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CameraRelativeLocation;                            // 0x5E0(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsMLBDown;                                         // 0x5F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_48BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       MaxZoomCameraOffset_BodySetting;                   // 0x600(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                       MaxZoomCameraOffset_HeadSetting;                   // 0x608(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   CompleteCheckMsgID;                                // 0x610(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	bool                                         IsRTriggerDown;                                    // 0x620(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsLTriggerDown;                                    // 0x621(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_48BD[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	double                                       CameraUpDownSpeed_ForPad;                          // 0x628(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_FadeWidget*   FadeInParameter;                                   // 0x630(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               DefaultHeadCameraLocation;                         // 0x638(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               DefaultBodyCameraLocation;                         // 0x650(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_UIInputAction    PlaySampleVoiceInInputAction;                      // 0x668(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                  PlaySampleVoiceActionHandle;                       // 0x670(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class UWBP_CharacterMake_C* GetDefaultObj();

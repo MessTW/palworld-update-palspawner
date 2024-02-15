@@ -46,6 +46,7 @@ public:
 	bool filterGuilds = false;
 	bool filterMapParts = false;
 	bool spec = false;
+	bool craftspeed = false;
 	bool IsRevive = false;
 	float SpeedModiflers = 1.0f;
 	//def and value

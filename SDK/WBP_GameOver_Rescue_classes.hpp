@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x418 - 0x408)
+// 0x10 (0x438 - 0x428)
 // WidgetBlueprintGeneratedClass WBP_GameOver_Rescue.WBP_GameOver_Rescue_C
 class UWBP_GameOver_Rescue_C : public UPalUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x408(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UProgressBar*                          ProgressBar_Rescue;                                // 0x410(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UProgressBar*                          ProgressBar_Rescue;                                // 0x430(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_GameOver_Rescue_C* GetDefaultObj();

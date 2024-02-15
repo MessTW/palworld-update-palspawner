@@ -9,19 +9,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x90 (0x498 - 0x408)
+// 0x90 (0x4B8 - 0x428)
 // WidgetBlueprintGeneratedClass WBP_PalDamageCanvas_StackDamage.WBP_PalDamageCanvas_StackDamage_C
 class UWBP_PalDamageCanvas_StackDamage_C : public UPalDamageDisplayCanvas
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x408(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                      Default_In;                                        // 0x410(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                          CanvasPanel_0;                                     // 0x418(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                        Damage;                                            // 0x420(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_360A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               Hit_Location;                                      // 0x428(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<TSoftObjectPtr<class AActor>, class UPalUIDamageTextBase*> DisplayingDamageTextMap;                           // 0x440(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	double                                       DisplayTime;                                       // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                      Default_In;                                        // 0x430(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                          CanvasPanel_0;                                     // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                        Damage;                                            // 0x440(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_47CB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               Hit_Location;                                      // 0x448(0x18)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<TSoftObjectPtr<class AActor>, class UPalUIDamageTextBase*> DisplayingDamageTextMap;                           // 0x460(0x50)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	double                                       DisplayTime;                                       // 0x4B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_PalDamageCanvas_StackDamage_C* GetDefaultObj();

@@ -1,7 +1,7 @@
 #pragma once
 
 // Dumped with Dumper-7!
-
+#include "pch.h"
 
 namespace SDK
 {
@@ -88,18 +88,6 @@ public:
 	{
 	}
 
-
-	inline void Add(const T& Element)
-	{
-		if (NumElements == MaxElements)
-		{
-			// Resize the array if needed
-			MaxElements = MaxElements == 0 ? 1 : MaxElements * 2;
-			Data = reinterpret_cast<T*>(realloc(Data, sizeof(T) * MaxElements));
-		}
-
-		Data[NumElements++] = Element;
-	}
 	inline T& operator[](uint32 Index)
 	{
 		return Data[Index];
@@ -137,6 +125,13 @@ public:
 	inline void ResetNum()
 	{
 		NumElements = 0;
+	}
+
+	inline void Add(T Element)
+	{
+		Data = reinterpret_cast<T*>(realloc(Data, sizeof(T) * (NumElements + 1)));
+		NumElements++;
+		Data[NumElements - 1] = Element;
 	}
 };
 
@@ -651,7 +646,7 @@ public:
 	uint64                                       Id;                                                // (0x08[0x08]) NOT AUTO-GENERATED PROPERTY
 	uint64                                       CastFlags;                                         // (0x10[0x08]) NOT AUTO-GENERATED PROPERTY
 	EClassFlags                                  ClassFlags;                                        // (0x18[0x04]) NOT AUTO-GENERATED PROPERTY
-	uint8                                        Pad_46CA[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F41[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	FFieldClass*                                 SuperClass;                                        // (0x20[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -701,10 +696,10 @@ public:
 class FProperty : public FField
 {
 public:
-	uint8                                        Pad_46CB[0x8];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F42[0x8];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	int32                                        ElementSize;                                       // (0x3C[0x04]) NOT AUTO-GENERATED PROPERTY
 	uint64                                       PropertyFlags;                                     // (0x40[0x08]) NOT AUTO-GENERATED PROPERTY
-	uint8                                        Pad_46CC[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F43[0x4];                                     // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	int32                                        Offset;                                            // (0x4C[0x04]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -719,7 +714,7 @@ public:
 class FByteProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46CD[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F44[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class UEnum*                                 Enum;                                              // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -734,7 +729,7 @@ public:
 class FBoolProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46CE[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F45[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	uint8                                        FieldSize;                                         // (0x78[0x01]) NOT AUTO-GENERATED PROPERTY
 	uint8                                        ByteOffset;                                        // (0x79[0x01]) NOT AUTO-GENERATED PROPERTY
 	uint8                                        ByteMask;                                          // (0x7A[0x01]) NOT AUTO-GENERATED PROPERTY
@@ -752,7 +747,7 @@ public:
 class FObjectPropertyBase : public FProperty
 {
 public:
-	uint8                                        Pad_46CF[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F46[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class UClass*                                PropertyClass;                                     // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -781,7 +776,7 @@ public:
 class FStructProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46D0[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F47[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class UStruct*                               Struct;                                            // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -796,7 +791,7 @@ public:
 class FArrayProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46D1[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F48[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class FProperty*                             InnerProperty;                                     // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -811,7 +806,7 @@ public:
 class FMapProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46D2[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F49[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class FProperty*                             KeyProperty;                                       // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	class FProperty*                             ValueProperty;                                     // (0x80[0x08]) NOT AUTO-GENERATED PROPERTY
 };
@@ -827,7 +822,7 @@ public:
 class FSetProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46D3[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F4A[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class FProperty*                             ElementProperty;                                   // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 };
 #ifdef _MSC_VER
@@ -842,7 +837,7 @@ public:
 class FEnumProperty : public FProperty
 {
 public:
-	uint8                                        Pad_46D4[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
+	uint8                                        Pad_4F4B[0x28];                                    // Fixing Size After Last (Predefined) Property  [ Dumper-7 ]
 	class FProperty*                             UnderlayingProperty;                               // (0x78[0x08]) NOT AUTO-GENERATED PROPERTY
 	class UEnum*                                 Enum;                                              // (0x80[0x08]) NOT AUTO-GENERATED PROPERTY
 };

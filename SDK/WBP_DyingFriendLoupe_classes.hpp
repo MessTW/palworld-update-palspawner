@@ -9,13 +9,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x498 - 0x488)
+// 0x10 (0x4B8 - 0x4A8)
 // WidgetBlueprintGeneratedClass WBP_DyingFriendLoupe.WBP_DyingFriendLoupe_C
 class UWBP_DyingFriendLoupe_C : public UWBP_LoupeBase_C
 {
 public:
-	class UWBP_GuildMemberGauge_C*               WBP_GuildMemberGauge;                              // 0x488(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*         TargetHandle;                                      // 0x490(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_GuildMemberGauge_C*               WBP_GuildMemberGauge;                              // 0x4A8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*         TargetHandle;                                      // 0x4B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass();
 	static class UWBP_DyingFriendLoupe_C* GetDefaultObj();

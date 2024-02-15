@@ -9,7 +9,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x1648 - 0x1648)
+// 0x0 (0x1650 - 0x1650)
 // BlueprintGeneratedClass BP_PalGameSetting.BP_PalGameSetting_C
 class UBP_PalGameSetting_C : public UPalGameSetting
 {

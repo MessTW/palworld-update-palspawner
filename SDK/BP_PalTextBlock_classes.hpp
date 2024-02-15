@@ -9,12 +9,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x50 (0x3D0 - 0x380)
+// 0x50 (0x3E0 - 0x390)
 // BlueprintGeneratedClass BP_PalTextBlock.BP_PalTextBlock_C
 class UBP_PalTextBlock_C : public UPalTextBlockBase
 {
 public:
-	TMap<class UDataTable*, enum class EPalLocalizeTextCategory> CategryMap_ForViewportGameDebug;                   // 0x380(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class UDataTable*, enum class EPalLocalizeTextCategory> CategryMap_ForViewportGameDebug;                   // 0x390(0x50)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass();
 	static class UBP_PalTextBlock_C* GetDefaultObj();

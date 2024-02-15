@@ -231,7 +231,7 @@ void UWBP_PalDialog_C::Construct()
 // class UCommonButtonBase*           CallFunc_GetLeftButton_rightButton                               (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UCommonButtonBase*           CallFunc_GetRightButton_button                                   (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue                       (NoDestructor)
+// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue                       (None)
 
 void UWBP_PalDialog_C::ExecuteUbergraph_WBP_PalDialog(int32 EntryPoint, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, class UPalHUDDispatchParameterBase* CallFunc_GetParam_ReturnValue, class UPalDialogParameterDialog* K2Node_DynamicCast_AsPal_Dialog_Parameter_Dialog, bool K2Node_DynamicCast_bSuccess, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UCommonButtonBase* CallFunc_GetLeftButton_rightButton, class UCommonButtonBase* CallFunc_GetRightButton_button, class UWidget* K2Node_Select_Default, const struct FPalUIActionBindData& CallFunc_RegisterActionBinding_ReturnValue)
 {

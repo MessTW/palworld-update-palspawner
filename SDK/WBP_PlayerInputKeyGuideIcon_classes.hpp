@@ -9,15 +9,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x68 (0x490 - 0x428)
+// 0x68 (0x4B0 - 0x448)
 // WidgetBlueprintGeneratedClass WBP_PlayerInputKeyGuideIcon.WBP_PlayerInputKeyGuideIcon_C
 class UWBP_PlayerInputKeyGuideIcon_C : public UPalUIActionWidgetForPlayerInput
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                Image_32;                                          // 0x430(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                              SizeBox_0;                                         // 0x438(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<enum class ECommonInputType, class UTexture2D*> OverrideImage;                                     // 0x440(0x50)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x448(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                Image_32;                                          // 0x450(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                              SizeBox_0;                                         // 0x458(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<enum class ECommonInputType, class UTexture2D*> OverrideImage;                                     // 0x460(0x50)(Edit, BlueprintVisible)
 
 	static class UClass* StaticClass();
 	static class UWBP_PlayerInputKeyGuideIcon_C* GetDefaultObj();

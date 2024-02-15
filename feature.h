@@ -68,3 +68,5 @@ void DeathAura(__int32 dmgAmount, float mDistance, bool bIntensityEffect = false
 void TeleportToMapMarker();
 
 void NoReload();
+
+void SetBasePalsCraftingSpeed(float mNewSpeed, bool bRestoreDefault);

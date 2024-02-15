@@ -230,8 +230,8 @@ void UWBP_PalItemSlotButtonBase_C::UnregisterPadAction()
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // FDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue                       (NoDestructor)
-// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue_1                     (NoDestructor)
+// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue                       (None)
+// struct FPalUIActionBindData        CallFunc_RegisterActionBinding_ReturnValue_1                     (None)
 
 void UWBP_PalItemSlotButtonBase_C::RegisterPadAction(FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_BooleanOR_ReturnValue, FDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_BooleanOR_ReturnValue_1, const struct FPalUIActionBindData& CallFunc_RegisterActionBinding_ReturnValue, const struct FPalUIActionBindData& CallFunc_RegisterActionBinding_ReturnValue_1)
 {
@@ -1126,9 +1126,9 @@ void UWBP_PalItemSlotButtonBase_C::OnSetEmptySlot__DelegateSignature()
 // Function WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C.OnMiddleClickedButton__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*ButtonBase                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*buttonBase                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase)
+void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1137,7 +1137,7 @@ void UWBP_PalItemSlotButtonBase_C::OnMiddleClickedButton__DelegateSignature(clas
 
 	Params::UWBP_PalItemSlotButtonBase_C_OnMiddleClickedButton__DelegateSignature_Params Parms{};
 
-	Parms.ButtonBase = ButtonBase;
+	Parms.buttonBase = buttonBase;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1254,10 +1254,10 @@ void UWBP_PalItemSlotButtonBase_C::OnDragged__DelegateSignature(class UWBP_PalIt
 // Function WBP_PalItemSlotButtonBase.WBP_PalItemSlotButtonBase_C.OnRightClickedButton__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*ButtonBase                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*buttonBase                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // enum class EPalItemSlotPressType   PressType                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, enum class EPalItemSlotPressType PressType)
+void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* buttonBase, enum class EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1266,7 +1266,7 @@ void UWBP_PalItemSlotButtonBase_C::OnRightClickedButton__DelegateSignature(class
 
 	Params::UWBP_PalItemSlotButtonBase_C_OnRightClickedButton__DelegateSignature_Params Parms{};
 
-	Parms.ButtonBase = ButtonBase;
+	Parms.buttonBase = buttonBase;
 	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);

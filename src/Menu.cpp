@@ -247,26 +247,15 @@ namespace DX11_Base {
         
         void TABMisc()
         {
-            if (ImGui::Button("11111", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
+            
+            ImGui::Checkbox("Crafting Speed", &Config.craftspeed);
+
+            if (ImGui::Button("Fast Crafting", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25)))
             {
-                SDK::UWorld* pWorld = Config.GetUWorld();
-                SDK::UPalUtility* pUtility = Config.pPalUtility;
-                if (!pWorld || !pUtility)
-                    return;
-
-                SDK::UPalGameSetting* pGameSettings = pUtility->GetGameSetting(pWorld);
-                if (!pGameSettings)
-                    return;
-
-                pGameSettings->WorldmapUIMaskClearSize = 20000.f;
-                pGameSettings->OverWeightSpeedZero_AddPercent = 0;
-                pGameSettings->AutoHPRegene_Percent_perSecond = 100;
-                pGameSettings->PlayerHPRateFromRespawn = 100;
-                pGameSettings->BuildExp = 10000;
+                SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter(); 
+                p_appc->SetReplicateMovement(false);
+                
             }
-
-
-
             if (ImGui::Button("Fast Crafting", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25)))
                 SetCraftingSpeed(9999.f, false);
             if (ImGui::Button("Easy Pal Condensation", ImVec2(ImGui::GetContentRegionAvail().x - 3, 20)))
@@ -1178,11 +1167,11 @@ namespace DX11_Base {
                 //initParameters.Talent_Shot = attk;
                 //initParameters.UnusedStatusPoint = 5000;
                 //initParameters.Talent_Defense = defense;
-                //initParameters.Rank_Attack = attk;
-                //initParameters.Rank_Defence = defense;
+                
+                if(attk!=1000)initParameters.Rank_Attack = attk;
+                if (defense != 1000)initParameters.Rank_Defence = defense;
                 initParameters.CraftSpeed = workspeed;
                 initParameters.Gender = isFemale ? SDK::EPalGenderType::Female : SDK::EPalGenderType::Male;
-                //SDK::TArray<SDK::FName> skills = {};
                 
                 
                 if (passive1)initParameters.PassiveSkillList.Add(lib->Conv_StringToName(SDK::FString(database::passive_skill_list[passive1])));
@@ -1196,7 +1185,7 @@ namespace DX11_Base {
                 
                 //initParameters.PassiveSkillList = skills;
 
-
+                
                 SDK::FPalWorkSuitabilityInfo tempData; 
                 tempData.WorkSuitability = SDK::EPalWorkSuitability::MAX;
                 tempData.Rank = 5000;
@@ -1356,18 +1345,12 @@ namespace DX11_Base {
 
                                     SDK::FPalIndividualCharacterSaveParameter initParameters;
                                     initParameters = Character->GetCharacterParameterComponent()->GetIndividualParameter()->GetSaveParameter();
-                                    /*Config.CloneParameters = *(SDK::FPalIndividualCharacterSaveParameter*)&initParameters;
+                                    //Config.CloneParameters = *(SDK::FPalIndividualCharacterSaveParameter*)&initParameters;
                                     //initParameters.Level = 50;
                                     //initParameters.PassiveSkillList[0] = lib->Conv_StringToName(SDK::FString(L"Legend"));
                                     //SDK::APalPlayerCharacter* pPalCharacter = Config.GetPalPlayerCharacter();
                                     // = pPalCharacter->GetCharacterParameterComponent()->GetIndividualParameter()->IndividualId;
-                                    auto count = initParameters.CraftSpeedRates.Values.Count();
-                                    for(int i=0;i<count;i++)
-                                    { 
-                                        auto name = initParameters.CraftSpeedRates.Values[i].Key.ToString().c_str();
-                                        auto value = initParameters.CraftSpeedRates.Values[i].Value;
-                                        g_Console->printdbg("\n[+] name: %s\0 value: %f [+]", Console::Colors::green, name, value);
-                                    }*/
+                                    
                                     
                                     SDK::FPalInstanceID instanceid = Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID;
                                     instanceid.InstanceId = guid;
@@ -1689,7 +1672,9 @@ namespace DX11_Base {
                 }
             }
         }
-        
+        if (Config.craftspeed)
+            SetBasePalsCraftingSpeed(1000,0);
+
         if ((GetAsyncKeyState(VK_F2) & 1))
             TeleportToMapMarker();
         //  Respawn

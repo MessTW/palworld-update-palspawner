@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "feature.h"
+#include "include/Console.hpp"
 using namespace SDK;
 
 
@@ -558,7 +559,18 @@ void SetBasePalsCraftingSpeed(float mNewSpeed, bool bRestoreDefault)
 		TArray<FFloatContainer_FloatPair> mCraftSpeedArray = sParams.CraftSpeedRates.Values;
 
 		if (mCraftSpeedArray.Count() > 0)
-			mCraftSpeedArray[0].Value = bRestoreDefault ? 1.0f : mNewSpeed;
+		{
+			
+			auto count = mCraftSpeedArray.Count();
+			for (int i = 0; i < count; i++)
+			{
+				mCraftSpeedArray[i].Value = bRestoreDefault ? 1.0f : mNewSpeed;
+				auto name = mCraftSpeedArray[i].Key.ToString().c_str();
+				auto value = mCraftSpeedArray[i].Value;
+				DX11_Base::g_Console->printdbg("\n[+] name: %s\0 value: %llx [+]", DX11_Base::Console::Colors::green, ivParams->GetFullName().c_str(), &mCraftSpeedArray);
+			}
+		}
+			
 	}
 }
 // credit: xCENTx
