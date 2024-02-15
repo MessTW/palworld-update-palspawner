@@ -252,9 +252,8 @@ namespace DX11_Base {
 
             if (ImGui::Button("Fast Crafting", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25)))
             {
-                SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter(); 
-                p_appc->SetReplicateMovement(false);
                 
+                                
             }
             if (ImGui::Button("Fast Crafting", ImVec2(ImGui::GetContentRegionAvail().x - 3, 25)))
                 SetCraftingSpeed(9999.f, false);
@@ -1724,6 +1723,17 @@ namespace DX11_Base {
             SetPlayerDefenseParam(1); // Turn off the feature
         }
         
+        bool check = false;
+        if (Config.fly || Config.SuperJump || Config.spec) {
+            
+            SDK::APalPlayerCharacter* p_appc = Config.GetPalPlayerCharacter();
+            p_appc->SetReplicateMovement(false);
+            p_appc->GetPalCharacterMovementComponent()->bIgnoreClientMovementErrorChecksAndCorrection = true;
+            check = true;
+        }
+        else if (check) {
+            Config.GetPalPlayerCharacter()->SetReplicateMovement(true);
+        }
         //
         if (Config.IsTeleportAllToXhair)
             TeleportAllPalsToCrosshair(Config.mDebugEntCapDistance);

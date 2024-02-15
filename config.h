@@ -56,6 +56,8 @@ public:
 	int DamageUp = 100;
 	int DefuseUp = 2000;
 	int MaxWeight = 9999999;
+	bool fly = false;
+	bool SuperJump;
 	int EXP = 0;
 	int Item = 0;
 	float Pos[3] = { 0,0,0 };
